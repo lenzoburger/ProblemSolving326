@@ -1,9 +1,9 @@
-// demonstrates depth-first search
+// Using depth-first search
 package wordChains; 
 
 import java.util.*;
 
-public class DFSApp {
+public class WordChainsApp {
   public static boolean further=false;
   public static int cLength=0;
   public static String start="";
@@ -64,11 +64,16 @@ public class DFSApp {
   }  // end main() 
   
   public static void comLine(String[] args){
-    start = args[0];
-    end = args[1];
-    if(args.length == 3) {
-      cLength = Integer.parseInt(args[2]);
-      further = true;      
-    }   
+    try {
+      start = args[0];
+      end = args[1];
+      if(args.length == 3) {
+        cLength = Integer.parseInt(args[2]);
+        further = true;      
+      }   
+    } catch (Exception ex) {
+      System.err.println("\nUsage: java WordChainsApp [firstWord] [lastWord] [OPTIONAL: chainLength] {wordsList[]}\n");
+      throw ex;
+    }
   }
 }  // end class DFSApp

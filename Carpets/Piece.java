@@ -1,5 +1,4 @@
-package Carpets;
-import java.util.*;
+package carpets;
 
 public class Piece{
   public String label;        // label (e.g. 'A')

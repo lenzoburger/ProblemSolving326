@@ -1,3 +1,5 @@
+package numbers;
+
 import java.util.*;
 public class StandardDeviation{    
 
@@ -8,7 +10,7 @@ public class StandardDeviation{
         double[] test = initArray(n);
         double[] t1 = initArray(n);
 
-        System.out.print("Array: [");
+        System.out.print("\nArray: [");
         for(double i: test1){
             System.out.print(" " + i);
         }
@@ -18,16 +20,16 @@ public class StandardDeviation{
         System.out.printf("Stdv Method 1: %s\n", method1(test1));
         System.out.printf("Stdv Method 2: %s\n", method2(test1));
 
-        System.out.println("100 added to each element.");
+        System.out.println("\n100 added to each element.");
         System.out.printf("Method 1: %s\n", method1(addValue(test1)));
         System.out.printf("Method 2: %s\n", method2(addValue(test1)));
 
 
-        System.out.println("Random array of length " + n);
+        System.out.println("\nRandom array of length " + n);
          System.out.printf("Stdv Method 1: %s\n", method1(test));
         System.out.printf("Stdv Method 2: %s\n", method2(test));
 
-        System.out.println("100 added to each element.");
+        System.out.println("\n100 added to each element.");
         System.out.printf("Method 1: %s\n", method1(addValue(test)));
         System.out.printf("Method 2: %s\n", method2(addValue(test)));
 

@@ -1,6 +1,7 @@
 /** Author: Lencho Burka **/
-import java.util.*;
-public class Threes2{
+package threes;
+
+public class Threes{
   public static int count=0;
   public static int count2=0;
   

@@ -1,4 +1,4 @@
-package Carpets;
+package carpets;
 
 import java.util.*;
 
@@ -9,8 +9,7 @@ public class NoMatchGraph {
   public boolean adjMat[][]; // adjacency matrix
   public int nPieces; // current number of vertices
   public int words = 0;
-  private Queue<Integer> stackQ = new LinkedList<Integer>();
-
+  
   public NoMatchGraph(int size) { // constructor
     MAX_PIECES = size;
     pieceList = new Piece[MAX_PIECES];

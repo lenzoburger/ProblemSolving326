@@ -1,4 +1,4 @@
-package Pentonimoes;
+package pentonimoes;
 
 import java.util.ArrayList;
 

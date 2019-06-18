@@ -1,8 +1,8 @@
-package Carpets;
+package carpets;
 
 import java.util.*;
 
-public class balMatchGraph {
+public class BalMatchGraph {
   public Random rand = new Random();
   public String printErr = "";
   private final int MAX_PIECES;
@@ -10,9 +10,7 @@ public class balMatchGraph {
   public int adjMat[][]; // adjacency matrix
   public int nPieces; // current number of vertices
   public int words = 0;
-  private Queue<Integer> stackQ = new LinkedList<Integer>();
-
-  public balMatchGraph(int size) { // constructor
+  public BalMatchGraph(int size) { // constructor
     MAX_PIECES = size;
     pieceList = new Piece[MAX_PIECES];
     // adjacency matrix

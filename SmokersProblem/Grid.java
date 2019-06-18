@@ -1,4 +1,4 @@
-package SmokersProblem;
+package smokersProblem;
 
 import java.util.ArrayList;
 
@@ -125,10 +125,7 @@ public class Grid {
     }
 
     public void setMyExclusionZone(Smoker nonSmoker, int zone) {
-        int x = nonSmoker.x;
-        int y = nonSmoker.y;
-
-        if (nonSmoker.myExclusionZone > 0) { //reset my exclusion Zone
+        if (nonSmoker.myExclusionZone > 0) { // reset my exclusion Zone
             for (Smoker[] row : vertexList) {
                 for (Smoker each : row) {
                     int dist = Math.max(each.y - nonSmoker.y, nonSmoker.y - each.y) + Math.max(each.x - nonSmoker.x, nonSmoker.x - each.x);

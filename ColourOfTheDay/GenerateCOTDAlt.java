@@ -1,6 +1,8 @@
+package colourOfTheDay;
+
 import java.util.*;
 
-public class COTD_ArrayP2 {
+public class GenerateCOTDAlt {
   private enum Day {
     TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY, MONDAY
   };

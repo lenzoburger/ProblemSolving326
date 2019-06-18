@@ -1,3 +1,5 @@
+package numbers;
+
 public class HarmonicNums{
 
     public static void main(String args[]) {
@@ -6,12 +8,12 @@ public class HarmonicNums{
         float singleReverse = calcHarmSingleRev(10000);
         double doubleReverse = calcHarmDoubleRev(10000);
         
-        System.out.println("single result " + singleResult);
+        System.out.println("\nsingle result " + singleResult);
         
         System.out.println("single reverse " + singleReverse);
         
 
-        System.out.println("partial harmonic sum for n = 4 25.0 / 12.0: " +
+        System.out.println("\npartial harmonic sum for n = 4 25.0 / 12.0: " +
                            25.0 / 12.0);
     }
     
@@ -41,7 +43,7 @@ public class HarmonicNums{
             double difference = result - lastResult;
             loss += Math.abs((1.0d / i) - difference);
         }
-        System.out.println("double result " + result);
+        System.out.println("\ndouble result " + result);
         System.out.println("loss: " + loss);
         return result;
     }

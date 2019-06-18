@@ -1,3 +1,5 @@
+package repeatedDigits;
+
 import java.util.ArrayList;
 
 /**
@@ -7,8 +9,18 @@ public class findRepeat {
     private static ArrayList<Digit> numberSystem= new ArrayList<Digit>();
     private static ArrayList<Digit> numberSystemC= new ArrayList<Digit>();
     public static void main(String[] args) {
-        int b= Integer.parseInt(args[0]);
-        int c= Integer.parseInt(args[1]);
+        int b= 0;
+        int c= 0;
+
+        try {
+            b= Integer.parseInt(args[0]);
+            c= Integer.parseInt(args[1]);
+         } catch (Exception ex) {
+             System.err.println("\nUsage: java repeatedDigits.findRepeat [base1 b] [base2 c]\n");
+             throw ex;
+         }
+
+
         for(int i=0; i<b;i++){
             numberSystem.add(new Digit(i));
         }
@@ -39,12 +51,12 @@ public class findRepeat {
             numC.add(0,nSC.get(modC));
             num.add(0,nS.get(mod));
             if(hasRepeat(num)&&hasRepeat(numC)){
-                System.out.println(i);
+                System.out.println("\nSmallest with integer repeating digits (n): "+i);
                 return;
             }
             i++;
         }
-        System.out.println("Not Possible");
+        System.out.println("\nNot Possible");
     }
 
     public static boolean hasRepeat(ArrayList<Digit> number){

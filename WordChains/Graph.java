@@ -1,4 +1,5 @@
 package wordChains;
+import java.io.Console;
 import java.util.*;
 
 public class Graph {
@@ -102,6 +103,7 @@ public class Graph {
     int l= s1.length();
     int matches=0;
     for(int i=0;i<l;i++){
+      //System.out.println(s1 + ", " + s2);
       if(s1.charAt(i)==s2.charAt(i)){
         matches++;
       }

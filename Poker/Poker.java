@@ -1,7 +1,7 @@
+package poker;
 
 //Lencho Burka
 import java.util.*;
-import java.math.*;
 
 public class Poker {
     private static String[] cards = new String[52];

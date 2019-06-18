@@ -1,11 +1,11 @@
-package Pentonimoes;
+package pentonimoes;
 
 import java.util.*;
 
 /**
  * Created by lburka on 5/8/15.
  */
-public class Pentominoes2 {
+public class PentominoesSolve {
     private static Shapes[] O;
     private static Shapes[] P;
     private static Shapes[] Q;
@@ -45,6 +45,7 @@ public class Pentominoes2 {
                 mat.add(store);
             }
         }
+        input.close();
         createShapes();
         criteria=critList(crit);
         runSearch(criteria);
