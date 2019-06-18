@@ -7,6 +7,7 @@ For each solution:
 2. Compile `javac -d . *.java`
 ### Run
 Refer to _`[solutionName]_requirement.pdf`_ for more info
+
 _**Carpets**_
 * Usage: _`java carpets.MakeCarpet [carpetSize] [MatchType] < [Input/File]`_
   * _e.g._ `java carpets.MakeCarpet 5 -n < test\t0.txt`
