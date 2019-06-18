@@ -1,7 +1,7 @@
 /** Author: Lencho Burka **/
 package threes;
 
-public class Threes2{
+public class Threes{
   public static int count=0;
   public static int count2=0;
   

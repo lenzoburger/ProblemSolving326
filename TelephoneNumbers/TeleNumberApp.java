@@ -18,7 +18,7 @@ public class TeleNumberApp {
       line = input.nextLine();
       check = sort(line);
       if (check.equals("INVALID")) {
-        System.out.println(line + " INV");
+        System.out.println(line + " INV\n");
       }
 
       if (!(check.equals("INVALID")) && counter < 100) {
@@ -30,11 +30,11 @@ public class TeleNumberApp {
         }
 
         if (line.equals(" DUP")) {
-          System.out.println(check + line);
+          System.out.println(check + line + "\n");
         } else {
           nums[counter] = check;
           counter++;
-          System.out.println(check);
+          System.out.println(check + "\n");
         }
       }
     }

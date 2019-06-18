@@ -29,18 +29,20 @@ public class SProblem {
                 Scanner l= new Scanner(input.nextLine());
                 rows = l.nextInt();
                 cols = l.nextInt();
-
+                l.close();
             }else{
                 int[] coord= new int[3];
                 Scanner l= new Scanner(line);
                 coord[0]=l.nextInt();
                 coord[1]=l.nextInt();
                 nonSmokers.add(coord);
+                l.close();
             }
         }
-
         g= new Grid(rows,cols,nonSmokers);
         g.findTotal();
         //g.printGrid(g.vertexList);
+        s.close();
+        input.close();
     }
 }
