@@ -1,17 +1,16 @@
-package Carpets;
+package carpets;
 
 import java.util.*;
 
-public class maxMatchGraph {
+public class MaxMatchGraph {
   public String printErr = "";
   private final int MAX_PIECES;
   public Piece pieceList[]; // list of vertices
   public int adjMat[][]; // adjacency matrix
   public int nPieces; // current number of vertices
   public int words = 0;
-  private Queue<Integer> stackQ = new LinkedList<Integer>();
-
-  public maxMatchGraph(int size) { // constructor
+  
+  public MaxMatchGraph(int size) { // constructor
     MAX_PIECES = size;
     pieceList = new Piece[MAX_PIECES];
     // adjacency matrix

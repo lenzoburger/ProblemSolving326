@@ -1,3 +1,5 @@
+package epidemic;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -8,7 +10,13 @@ public class EpidemicP2 {
 
     public static void main(String[] args) {
         ArrayList<ArrayList<Cell>> states= new ArrayList<ArrayList<Cell>>();
-        Scanner input= new Scanner(System.in);
+        Scanner input= null;
+        try {
+            input = new Scanner(System.in);
+          } catch (Exception ex) {
+            System.err.println("\nUsage: java epidemic.EpidemicP2 < [InputFile]\n");
+            throw ex;
+        }
 
         while (input.hasNextLine()){
             String line= input.nextLine();
@@ -34,16 +42,18 @@ public class EpidemicP2 {
             }
         }
 
+        input.close();
+
         findNeighbours(states);
         makeSick(states);
         cleanUP(states);
-        printCells(states);
+        printCells(states);        
     }
 
     public static void update(ArrayList<ArrayList<Cell>> pop){
         boolean updated=true;
 
-        while(updated) {
+        while(updated && pop.size() > 0) {
             updated=false;
             int a=0;
             while(a<Math.max(pop.size(),pop.get(0).size())){

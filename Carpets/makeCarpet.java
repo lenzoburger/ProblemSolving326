@@ -1,12 +1,21 @@
-package Carpets;
+package carpets;
 
 import java.util.*;
 
-public class makeCarpet {
+public class MakeCarpet {
   public static void main(String[] args) {
     ArrayList<String> pieces = new ArrayList<String>();
-    int n = Integer.parseInt(args[0]);
-    Scanner in = new Scanner(System.in);
+
+    int n = 0;
+    Scanner in = null;
+    try {
+      n = Integer.parseInt(args[0]);
+      in = new Scanner(System.in);
+    } catch (Exception ex) {
+      System.err.println("\nUsage: java carpets.MakeCarpet [carpetSize] [MatchType] < [inputFile]\n");
+      throw ex;
+    }
+
     while (in.hasNextLine()) {
       String strip = in.nextLine();
       if (!(pieces.isEmpty())) {
@@ -21,6 +30,8 @@ public class makeCarpet {
       // pieces.add();
     }
 
+    in.close();
+
     if (args[1].equals("-n")) {
       makeNoMatchCarpet(n, pieces);
     } else if (args[1].equals("-m")) {
@@ -34,7 +45,7 @@ public class makeCarpet {
 
   public static void makeMaxMatchCarpet(int n, ArrayList<String> pieces) {
     if (n <= pieces.size()) {
-      maxMatchGraph g = new maxMatchGraph(pieces.size());
+      MaxMatchGraph g = new MaxMatchGraph(pieces.size());
       g.printErr += "Max Matches: \n\n";
       Collections.sort(pieces);
       // System.out.println(pieces + " length: " + pieces.size());
@@ -110,7 +121,7 @@ public class makeCarpet {
   public static void makeBalancedCarpet(int n, ArrayList<String> pieces) {
     if (n <= pieces.size()) {
       System.out.println("\nMake a Balanced Carpet....\n");
-      balMatchGraph g = new balMatchGraph(pieces.size());
+      BalMatchGraph g = new BalMatchGraph(pieces.size());
       g.printErr += "Max Matches: \n\n";
       Collections.sort(pieces);
 

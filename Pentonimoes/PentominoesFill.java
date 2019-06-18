@@ -1,4 +1,4 @@
-package Pentonimoes;
+package pentonimoes;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * Created by lburka on 5/8/15.
  */
-public class Pentominoes {
+public class PentominoesFill {
     private static Shapes[] O;
     private static Shapes[] P;
     private static Shapes[] Q;
@@ -51,6 +51,7 @@ public class Pentominoes {
                 mat.add(store);
             }
         }
+        input.close();
         createShapes();
         shapes = createtList();
         runSearch(shapes);

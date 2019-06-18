@@ -1,14 +1,12 @@
-import java.util.*;
+package numbers;
 
 public class Identity {
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        double x = scan.nextDouble();
-        double y = scan.nextDouble();
+        double x = Double.parseDouble(args[0]);
+        double y = Double.parseDouble(args[1]);
         System.out.println("LHS: " + x);
         System.out.println("RHS: " + calcRHS(x,y));
-        
     }
 
     public static double calcRHS(double x, double y) {

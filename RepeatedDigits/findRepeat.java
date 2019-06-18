@@ -1,3 +1,5 @@
+package repeatedDigits;
+
 import java.util.ArrayList;
 
 /**

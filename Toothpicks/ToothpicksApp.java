@@ -1,4 +1,4 @@
-package Toothpicks;
+package toothpicks;
 
 import javax.swing.*;
 

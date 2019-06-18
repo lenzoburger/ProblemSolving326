@@ -1,4 +1,4 @@
-package SmokersProblem;
+package smokersProblem;
 
 import java.util.ArrayList;
 import java.util.Scanner;

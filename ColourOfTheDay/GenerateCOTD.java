@@ -1,6 +1,8 @@
+package colourOfTheDay;
+
 import java.util.*;
 
-public class COTD_ArrayList{
+public class GenerateCOTD{
   private enum Day {MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY};
   private static int DOOMSDAY= 1001;
   private static ArrayList colourMap = new ArrayList((DOOMSDAY*350));  
