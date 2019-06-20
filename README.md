@@ -1,6 +1,6 @@
 # ProblemSolving326
 Series of solutions to programming and mathematical problems.
-Problems sets have specific requirements as well as **time complexity (Big O)** constraints. To meet these requirements and contraints the solutions utilise; **mathematical models**, various **Data Structures**, **Graph Algorithms**, **Sorting & Searching algorithms**, **Heuristic algorithms** and **Randomized algorithms**.
+Problem sets have specific requirements as well as **time complexity (Big O)** constraints. To meet these requirements and contraints the solutions utilise; **mathematical models**, various **Data Structures**, **Graph Algorithms**, **Sorting & Searching algorithms**, **Heuristic algorithms** and **Randomized algorithms**.
 
 ### Compile
 For each solution:
