@@ -2,10 +2,22 @@
 Series of solutions to programming and mathematical problems.
 Problem sets have specific requirements as well as **time complexity (Big O)** constraints. To meet these requirements and contraints the solutions utilise; **mathematical models**, various **Data Structures**, **Graph Algorithms**, **Sorting & Searching algorithms**, **Heuristic algorithms** and **Randomized algorithms**.
 
+## Setup
+
+### Install dependencies
+1. Install [Java Development Kit](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+2. Ensure Java/JDK is included in PATH & set JAVA_HOME variable
+
+### Clone
+1. Clone repo: `git clone https://github.com/lenzoburger/ProblemSolving326.git`
+2. Launch Terminal/CMD
+3. [Compile](#compile) & [Run](#ru) solutions
+
 ### Compile
 For each solution:
 1. Change working directory `cd <solutionName>`
 2. Compile `javac -d . *.java`
+
 ### Run
 Refer to _`<solutionName>_requirement.pdf`_ for more info
 
@@ -77,11 +89,11 @@ _**Word Chains**_
 
 
 
-## Development
-#### Dependencies
+## Tools & Dependencies
+### Dependencies
 1. [Java Development Kit](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-#### Tools
+### Tools
 1. [Git](https://git-scm.com/downloads)
 2. [Visual Studio Code](https://code.visualstudio.com/download) + **Extensions:**
    * [_Java Extension Pack_](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
@@ -90,13 +102,3 @@ _**Word Chains**_
    * [_Markdown Preview Enhanced_](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
    * [_Meterial Icon Theme_](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
    * [_Path Intellisense_](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
-### Setup
-
-#### Install dependencies
-1. Install [Java Development Kit](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-2. Ensure Java/JDK is included in PATH & set JAVA_HOME variable
-
-#### Clone & Run
-1. Clone repo: `git clone https://github.com/lenzoburger/ProblemSolving326.git`
-2. Launch Terminal/CMD
-3. [Compile](#compile) & [Run](#ru) solutions
